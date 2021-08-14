@@ -1,2 +1,2 @@
 # Dotfiles
-storing config files for distrohopping and just security
+storing config files for distrohopping and just plain security
