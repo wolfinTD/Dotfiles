@@ -387,31 +387,27 @@ bar-volume-empty-foreground = ${colors.foreground-alt}
 [module/powermenu]
 type = custom/menu
 
-expand-right = true
+format-foreground = ${colors.xcolor7}
+format-background = ${colors.xcolor0}
 
-format-spacing = 1
 
-label-open = 
-label-open-foreground = ${colors.secondary}
-label-close =  cancel
-label-close-foreground = ${colors.secondary}
-label-separator = |
-label-separator-foreground = ${colors.foreground-alt}
+label-open = "power"
+label-open-font = 3 
+label-close = "cancel"
+label-close-foreground = ${colors.lime}
+label-separator = " / "
+label-separator-foreground = ${colors.xcolor1}
 
-menu-0-0 = reboot
-menu-0-0-exec = menu-open-1
-menu-0-1 = power off
-menu-0-1-exec = menu-open-2
 
-menu-1-0 = cancel
-menu-1-0-exec = menu-open-0
-menu-1-1 = reboot
-menu-1-1-exec = sudo reboot
+; reboot
+menu-0-1 = "reboot"
+menu-0-1-exec = systemctl reboot
+menu-0-1-foreground = ${colors.salmon}
+; shutdown
+menu-0-0 = "shutdown  "
+menu-0-0-exec = systemctl poweroff
+menu-0-0-foreground = ${colors.salmon}
 
-menu-2-0 = power off
-menu-2-0-exec = sudo poweroff
-menu-2-1 = cancel
-menu-2-1-exec = menu-open-0
 
 [settings]
 screenchange-reload = true
