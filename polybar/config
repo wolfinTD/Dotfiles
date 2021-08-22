@@ -393,7 +393,7 @@ label-open = "power"
 label-open-font = 3 
 label-close = "cancel"
 label-close-foreground = ${colors.lime}
-label-separator = " / "
+label-separator = " // "
 label-separator-foreground = ${colors.xcolor1}
 
 
