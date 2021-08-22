@@ -9,10 +9,8 @@
 ;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
 ;
 ;
-;   To learn more about how to configure Polybar
-;   go to https://github.com/polybar/polybar
-;
-;   The README contains a lot of information
+;   Eklavya Sood's polybar config
+;   most of this is ripoff material, but idc to change enough of it so whatever
 ;
 ;==========================================================
 
@@ -64,7 +62,7 @@ modules-right = filesystem pulseaudio memory cpu date powermenu
 
 separator = //
 
-tray-position = none
+tray-position = right
 tray-padding = 2
 ;tray-background = #0063ff
 
@@ -404,7 +402,7 @@ menu-0-1 = "reboot"
 menu-0-1-exec = systemctl reboot
 menu-0-1-foreground = ${colors.salmon}
 ; shutdown
-menu-0-0 = "shutdown  "
+menu-0-0 = "shutdown"
 menu-0-0-exec = systemctl poweroff
 menu-0-0-foreground = ${colors.salmon}
 
