@@ -18,12 +18,12 @@
 
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #55061871
+background = #55252E32
 background-alt = #061871
 ;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
 foreground-alt = #555
-primary = #C63D93
+primary = #00A5B3 
 secondary = #e60053
 alert = #bd2c40
 
@@ -212,7 +212,7 @@ type = internal/cpu
 interval = 2
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #c63d93
+format-underline = #00A5B3
 label = %percentage:2%%
 
 [module/memory]
@@ -220,7 +220,7 @@ type = internal/memory
 interval = 2
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #c63d93
+format-underline = #00A5B3
 label = %percentage_used%%
 
 #[module/wlan]
@@ -273,7 +273,7 @@ time-alt = %H:%M:%S
 
 format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #c63d93
+format-underline = #00A5B3
 
 label = %time% %date%
 
@@ -288,13 +288,13 @@ label-muted = 🔇 muted
 label-muted-foreground = #666
 
 bar-volume-width = 10
-bar-volume-foreground-0 = #c63d93
-bar-volume-foreground-1 = #c63d93
-bar-volume-foreground-2 = #c63d93
-bar-volume-foreground-3 = #c63d93
-bar-volume-foreground-4 = #c63d93
-bar-volume-foreground-5 = #c63d93
-bar-volume-foreground-6 = #c63d93
+bar-volume-foreground-0 = #00A5B3
+bar-volume-foreground-1 = #00A5B3
+bar-volume-foreground-2 = #00A5B3
+bar-volume-foreground-3 = #00A5B3
+bar-volume-foreground-4 = #00A5B3
+bar-volume-foreground-5 = #00A5B3
+bar-volume-foreground-6 = #00A5B3
 bar-volume-gradient = false
 bar-volume-indicator = |
 bar-volume-indicator-font = 2
