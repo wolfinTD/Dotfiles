@@ -140,12 +140,12 @@ bindsym XF96AudioStop exec playerctl stop
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
-# restart i3 live, for making config changes reflect without signing out
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
-# bindings inside resize mode
+# resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
 
@@ -188,16 +188,17 @@ bindsym $mod+r mode "resize"
 
 
 #window border size
-for_window [class=".*"] border pixel 2
+for_window [class=".*"] border pixel 0
 
-#window gaps
-gaps inner 25
+#gaps
+gaps inner 15
 gaps outer 0
 #smart_gaps on
 
-#window compositor exec_always picon -b
+#window compositor
+exec_always picon -b
 
-#execute nitrogen wallpaper engine and picom window compositor on boot
+#nitrogen wallpaper and picom compositor, thanks for comp help DT!
 exec nitrogen --restore; picom --config ~/.config/picom/picom.conf
 
 #flameshot screenshot keybind
