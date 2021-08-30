@@ -120,5 +120,23 @@ super + alt + shift + {h,j,k,l}
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
+#keyboard volume bindings
+XF86AudioRaiseVolume
+	pactl set-sink-volume @DEFAULT_SINK@ +5%;
+#	pulsemixer --change-volume +5
+#	volume up
+XF86AudioLowerVolume
+	pactl set-sink-volume @DEFAULT_SINK@ -5%;
+#	pulsemixer --change-volume =5
+#	volume down
+XF86AudioMute
+	pactl set-sink-mute @DEFAULT_SINK@ toggle;
+#	pulsemixer --toggle-mute
+#	volume mute
+
+#flameshot screenshot binding
+Print
+	flameshot gui
+
 #picom on boot
 picom -f &
