@@ -128,7 +128,8 @@ label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
 
 label-empty = %name%
-label-empty-foreground = ${colors.foreground-alt}
+#label-empty-foreground = ${colors.foreground-alt}
+label-empty-foreground = #555
 label-empty-padding = 2
 
 ; Separator in between workspaces
