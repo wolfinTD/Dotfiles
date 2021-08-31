@@ -64,9 +64,9 @@ modules-right = filesystem pulseaudio memory cpu date powermenu
 
 #separator = //
 
-#tray-position = right
-#tray-padding = 2
-;tray-background = #0063ff
+tray-position = none 
+tray-padding = 2
+tray-background = #0063ff
 
 wm-restack = bspwm
 ;wm-restack = i3
