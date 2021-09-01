@@ -1,4 +1,9 @@
-#
+
+
+### 	Eklavya Sood's sxhkd config file 	###
+#	these bindings are either mostly stock, or something that work for me
+
+
 # wm independent hotkeys
 #
 
@@ -60,7 +65,7 @@ super + {_,shift + }{h,j,k,l}
 
 # focus the node for the given path jump
 super + {p,b,comma,period}
-	bspc node -f @{parent,brother,first,second}
+
 
 # focus the next/previous window in the current desktop
 super + {_,shift + }c
