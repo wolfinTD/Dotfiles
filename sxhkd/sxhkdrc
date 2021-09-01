@@ -128,17 +128,22 @@ super + {Left,Down,Up,Right}
 #keyboard volume bindings
 XF86AudioRaiseVolume
 	pactl set-sink-volume @DEFAULT_SINK@ +5%;
-#	pulsemixer --change-volume +5
-#	volume up
 XF86AudioLowerVolume
 	pactl set-sink-volume @DEFAULT_SINK@ -5%;
-#	pulsemixer --change-volume =5
-#	volume down
 XF86AudioMute
 	pactl set-sink-mute @DEFAULT_SINK@ toggle;
-#	pulsemixer --toggle-mute
-#	volume mute
 
+#keyboard media control bindings
+XF86AudioPlay
+	playerctl play-pause
+XF86AudioPause
+	playerctl play-pause
+XF86AudioNext
+	playerctl next
+XF86AudioPrev
+	playerctl previous
+XF86AudioStop
+	playerctl stop
 #flameshot screenshot binding
 Print
 	flameshot gui
