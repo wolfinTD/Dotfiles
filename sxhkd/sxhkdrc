@@ -13,7 +13,7 @@ super + Return
 
 # program launcher
 super + @space
-	rofi -modi drun,run -show drun -theme
+	rofi -show-icons -modi drun,run -show drun -theme
 
 # make sxhkd reload its configuration files:
 super + Escape
