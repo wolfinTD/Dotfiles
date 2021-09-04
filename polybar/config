@@ -57,8 +57,8 @@ font-3 = "Font Awesome 5 Free:10;1"
 font-4 = "Font Awesome 5 Free Solid:pixelsize=8;1"
 font-5 = "Font Awesome 5 Brands:10;1"
 
-modules-left = bspwm i3
-modules-center = xwindow
+modules-left = bspwm i3 xwindow
+modules-center = spotify
 modules-right = filesystem pulseaudio memory cpu date powermenu
 
 #separator = //
@@ -80,6 +80,17 @@ scroll-down = bspwm-deskprev
 
 cursor-click = pointer
 cursor-scroll = pointer
+
+[module/spotify]
+type = custom/script
+interval = 1
+format-prefix = ""
+format = <label>
+exec = python $HOME/Documents/spotify-polybar/spotify_status.py 
+format-underline = #00A5B3
+click-left = playerctl --player=spotify play-pause
+click-right = playerctl --player=spotify next
+click-middle = playerctl --player=spotify previous
 
 [module/xwindow]
 type = internal/xwindow
