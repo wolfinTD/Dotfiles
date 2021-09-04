@@ -38,7 +38,7 @@ element {
   padding: 16px;
 }
 
-element-icon{
+element-icon {
   size: 2ch;
 }
 element selected {

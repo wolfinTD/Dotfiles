@@ -14,11 +14,9 @@
 ;
 ;==========================================================
 
-#edited 28/08/2021
-
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #55252E32
+background = #00252E32
 background-alt = #252C2F
 ;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
@@ -30,7 +28,7 @@ alert = #bd2c40
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 22
+height = 18
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 7.0
@@ -52,7 +50,7 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = "fixed:pixelsize=10;1"
+font-0 = "Tamsyn:pixelsize=10;1"
 font-1 = "knifont:fontformat=truetype:size=8:antialias=false;0"
 font-2 = "siji:pixelsize=10;1"
 font-3 = "Font Awesome 5 Free:10;1"
@@ -283,7 +281,7 @@ label = %time% %date%
 type = internal/pulseaudio
 
 format-volume = <label-volume> <bar-volume>
-label-volume = VOL  %percentage%%
+label-volume = VOL %percentage%%
 label-volume-foreground = ${root.foreground}
 
 label-muted =  muted
