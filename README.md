@@ -1,5 +1,3 @@
-#### Dotfiles ####
-
 ## Eklavya Sood's linux dotfile repository ##
 
 Applications with files in this repo:
@@ -10,4 +8,3 @@ Applications with files in this repo:
 - polybar
 - rofi
 - sxhkd
-
