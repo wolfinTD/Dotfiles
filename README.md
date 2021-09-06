@@ -1,5 +1,9 @@
 ## Eklavya Sood's linux dotfile repository ##
 
+
+![current screen](/assets/images/'current screen.png')
+
+
 Applications with files in this repo:
 
 - [bspwm](https://github.com/baskerville/bspwm)
