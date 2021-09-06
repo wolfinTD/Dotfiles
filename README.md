@@ -1,4 +1,4 @@
-#### **Dotfiles** ####
+#### Dotfiles ####
 
 ## Eklavya Sood's linux dotfile repository ##
 
