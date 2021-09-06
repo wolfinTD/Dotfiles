@@ -1,7 +1,7 @@
 ## Eklavya Sood's linux dotfile repository ##
 
 
-current screen.png
+![screenshot](https://github.com/eklavyasood/Dotfiles/blob/main/current%20screen.png)
 
 Applications with files in this repo:
 
