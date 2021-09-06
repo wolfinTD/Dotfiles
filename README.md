@@ -2,7 +2,7 @@
 
 Applications with files in this repo:
 
-- bspwm
+- [bspwm](https://github.com/baskerville/bspwm)
 - i3
 - kitty
 - polybar
