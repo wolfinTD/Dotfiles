@@ -1,7 +1,7 @@
 ## Eklavya Sood's linux dotfile repository ##
 
 
-![screenshot](https://github.com/eklavyasood/Dotfiles/blob/main/current%20screen.png)
+![screenshot](https://github.com/eklavyasood/Dotfiles/blob/main/screens/bspwm.png)
 
 Applications with files in this repo:
 
