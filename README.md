@@ -3,7 +3,7 @@
 
 ![screenshot](https://github.com/eklavyasood/Dotfiles/blob/main/screens/bspwm.png)
 
-Applications with files in this repo:
+Projects that I've used for my desktop - 
 
 - [bspwm](https://github.com/baskerville/bspwm)
 - [i3](https://github.com/i3/i3)
