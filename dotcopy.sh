@@ -1,4 +1,5 @@
 #!/bin/bash
+cp -r $HOME/.config/awesome $HOME/Documents/Dotfiles
 cp -r $HOME/.config/bspwm $HOME/Documents/Dotfiles
 cp -r $HOME/.config/i3 $HOME/Documents/Dotfiles
 cp -r $HOME/.config/kitty $HOME/Documents/Dotfiles

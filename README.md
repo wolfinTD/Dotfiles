@@ -5,6 +5,7 @@
 
 Projects that I've used for my desktop - 
 
+- [awesomewm](https://github.com/awesomeWM/awesome)
 - [bspwm](https://github.com/baskerville/bspwm)
 - [i3](https://github.com/i3/i3)
 - [kitty](https://github.com/kovidgoyal/kitty)
