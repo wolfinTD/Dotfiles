@@ -15,6 +15,9 @@ super + Return
 super + @space
 	rofi -show-icons -modi drun,run -show drun -theme
 
+super + d
+	dmenu_run -b
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
