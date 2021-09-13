@@ -8,3 +8,4 @@ cp -r $HOME/.config/polybar $HOME/Documents/Dotfiles/.config
 cp -r $HOME/.config/rofi $HOME/Documents/Dotfiles/.config
 cp -r $HOME/.config/sxhkd $HOME/Documents/Dotfiles/.config
 cp -r $HOME/.config/alacritty $HOME/Documents/Dotfiles/.config
+cp -r $HOME/.config/qtile $HOME/Documents/Dotfiles/.config
