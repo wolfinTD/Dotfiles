@@ -1,5 +1,5 @@
 ### eklavyasood qtile configuration file ###
-
+#just learnint, made this from scratch with some internet references, still pretty shit since I don't actually know python yet
 from typing import list
 
 from libqtile import bar, layout, widget
