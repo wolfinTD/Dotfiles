@@ -10,6 +10,7 @@ Projects that I've used for my desktop -
 - [bspwm](https://github.com/baskerville/bspwm)
 - [i3](https://github.com/i3/i3)
 - [kitty](https://github.com/kovidgoyal/kitty)
+- [fish](https://github.com/fish-shell/fish-shell)
 - [polybar](https://github.com/polybar/polybar)
 - [qtile](https://github.com/qtile/qtile)
 - [rofi](https://github.com/davatorium/rofi)
