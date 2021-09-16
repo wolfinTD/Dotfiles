@@ -15,3 +15,4 @@ Projects that I've used for my desktop -
 - [qtile](https://github.com/qtile/qtile)
 - [rofi](https://github.com/davatorium/rofi)
 - [sxhkd](https://github.com/baskerville/sxhkd)
+- [xmonad](https://github.com/xmonad/xmonad)
