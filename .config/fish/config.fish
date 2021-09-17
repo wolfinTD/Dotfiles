@@ -14,7 +14,7 @@ alias gau="git add -u"
 alias gc="git commit -m"
 alias gp="git push"
 alias ls="exa"
-alias play="./$HOME/Downloads/GW2/play.sh"
+alias gw2="./Downloads/GW2/play.sh"
 alias syu="sudo pacman -Syu"
 
 #exports to make defaults

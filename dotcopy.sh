@@ -12,5 +12,4 @@ cp -r $HOME/.config/rofi $HOME/Documents/Dotfiles/.config
 cp -r $HOME/.config/sxhkd $HOME/Documents/Dotfiles/.config
 cp -r $HOME/.config/alacritty $HOME/Documents/Dotfiles/.config
 cp -r $HOME/.config/qtile $HOME/Documents/Dotfiles/.config
-cp -r $HOME/.xmonad $HOME/Documents/Dotfiles/
 cp    $HOME/Documents/Dotfiles/dotcopy.sh $HOME/.local/bin/
