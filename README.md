@@ -14,4 +14,5 @@ Projects that I've used for my desktop -
 - [polybar](https://github.com/polybar/polybar)
 - [qtile](https://github.com/qtile/qtile)
 - [rofi](https://github.com/davatorium/rofi)
+- [spacevim](https://github.com/SpaceVim/SpaceVim)
 - [sxhkd](https://github.com/baskerville/sxhkd)
