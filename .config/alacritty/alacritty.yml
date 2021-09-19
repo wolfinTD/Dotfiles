@@ -7,7 +7,7 @@ font:
     family: JetBrains Mono
     style: Medium
 
-    size: 12
+    size: 10
 
     offset:
       x: -1
@@ -633,37 +633,37 @@ font:
 #
 #Color Scheme - ir black
 ## Colors (IR Black)
-colors:
-  # Default colors
-  primary:
-    background: '#000000'
-    foreground: '#ffffff'
-
-  cursor:
-    text: '#ffffff'
-    cursor: '#ffffff'
-
-  # Normal colors
-  normal:
-    black:   '#4e4e4e'
-    red:     '#ff6c60'
-    green:   '#a8ff60'
-    yellow:  '#ffffb6'
-    blue:    '#96cbfe'
-    magenta: '#ff73fd'
-    cyan:    '#c6c5fe'
-    white:   '#eeeeee'
-
-  # Bright colors
-  bright:
-    black:   '#7c7c7c'
-    red:     '#ffb6b0'
-    green:   '#ceffab'
-    yellow:  '#ffffcb'
-    blue:    '#b5dcfe'
-    magenta: '#ff9cfe'
-    cyan:    '#dfdffe'
-    white:   '#ffffff'
+#colors:
+#  # Default colors
+#  primary:
+#    background: '#000000'
+#    foreground: '#ffffff'
+#
+#  cursor:
+#    text: '#ffffff'
+#    cursor: '#ffffff'
+#
+#  # Normal colors
+#  normal:
+#    black:   '#4e4e4e'
+#    red:     '#ff6c60'
+#    green:   '#a8ff60'
+#    yellow:  '#ffffb6'
+#    blue:    '#96cbfe'
+#    magenta: '#ff73fd'
+#    cyan:    '#c6c5fe'
+#    white:   '#eeeeee'
+#
+#  # Bright colors
+#  bright:
+#    black:   '#7c7c7c'
+#    red:     '#ffb6b0'
+#    green:   '#ceffab'
+#    yellow:  '#ffffcb'
+#    blue:    '#b5dcfe'
+#    magenta: '#ff9cfe'
+#    cyan:    '#dfdffe'
+#    white:   '#ffffff'
 #
 #
 #Color Scheme - iterm default
@@ -701,7 +701,7 @@ colors:
 ## Colors (Jellybeans)
 #colors:
 #  # Default colors
-#  primary:
+  primary:
 #    background: '#161616'
 #    foreground: '#e4e4e4'
 #
@@ -739,33 +739,33 @@ colors:
 #
 #
 #Color Scheme - kitty
-#colors:
-#  # Default colors
-#  primary:
-#    background: '#000000'
-#    foreground: '#dddddd'
-#
-#  # Normal colors
-#  normal:
-#    black:   '#000000'
-#    red:     '#cc0403'
-#    green:   '#19cb00'
-#    yellow:  '#cecb00'
-#    blue:    '#0d73cc'
-#    magenta: '#cb1ed1'
-#    cyan:    '#0dcdcd'
-#    white:   '#dddddd'
-#
-#  # Bright colors
-#  bright:
-#    black:   '#767676'
-#    red:     '#f2201f'
-#    green:   '#23fd00'
-#    yellow:  '#fffd00'
-#    blue:    '#1a8fff'
-#    magenta: '#fd28ff'
-#    cyan:    '#14ffff'
-#    white:   '#ffffff'
+colors:
+  # Default colors
+  primary:
+    background: '#000000'
+    foreground: '#dddddd'
+
+  # Normal colors
+  normal:
+    black:   '#000000'
+    red:     '#cc0403'
+    green:   '#19cb00'
+    yellow:  '#cecb00'
+    blue:    '#0d73cc'
+    magenta: '#cb1ed1'
+    cyan:    '#0dcdcd'
+    white:   '#dddddd'
+
+  # Bright colors
+  bright:
+    black:   '#767676'
+    red:     '#f2201f'
+    green:   '#23fd00'
+    yellow:  '#fffd00'
+    blue:    '#1a8fff'
+    magenta: '#fd28ff'
+    cyan:    '#14ffff'
+    white:   '#ffffff'
 #
 #
 #Color Scheme - material

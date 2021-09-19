@@ -86,7 +86,7 @@ type = custom/script
 interval = 1
 format-prefix = ""
 format = <label>
-exec = python $HOME/Documents/spotify-polybar/spotify_status.py 
+exec = python $HOME/docs/spotify-polybar/spotify_status.py 
 format-underline = #00A5B3
 click-left = playerctl --player=spotify play-pause
 click-right = playerctl --player=spotify next

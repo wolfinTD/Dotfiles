@@ -17,9 +17,6 @@ bspc config gapless_monocle      true
 #bspc rule -a Kupfer.py focus=on
 #bspc rule -a Screenkey manage=off
 
-bspc rule -a ./$HOME/Documents/autostart-scripts/firefox.sh desktop='^2'
-bspc rule -a Spotify desktop='^10'
-
 picom -f &
 ./.config/polybar/launch.sh
 nitrogen --restore &
