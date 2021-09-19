@@ -7,7 +7,7 @@ cp -r $HOME/.config/awesome $HOME/Documents/Dotfiles/.config/
 cp -r $HOME/.config/bspwm $HOME/Documents/Dotfiles/.config
 cp -r $HOME/.config/i3 $HOME/Documents/Dotfiles/.config
 cp -r $HOME/.config/kitty $HOME/Documents/Dotfiles/.config
-cp -r $HOME/.config/fish/config.fish $HOME/Documents/Dotfiles/.config
+cp -r $HOME/.config/fish $HOME/Documents/Dotfiles/.config
 cp -r $HOME/.config/polybar $HOME/Documents/Dotfiles/.config
 cp -r $HOME/.config/rofi $HOME/Documents/Dotfiles/.config
 cp -r $HOME/.SpaceVim.d $HOME/Documents/Dotfiles/

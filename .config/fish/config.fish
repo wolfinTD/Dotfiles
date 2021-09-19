@@ -3,7 +3,7 @@ if status is-interactive
 	#colorscript -e 34 | lolcat
 end
 
-#aliases to make life in the terminal easier for me
+#aliases
 alias nv="nvim"
 alias vim="nvim"
 alias vi="nvim"
@@ -15,7 +15,7 @@ alias gc="git commit -m"
 alias gp="git push"
 alias ls="exa"
 alias gw2="./Downloads/GW2/play.sh"
-alias syu="sudo pacman -Syu"
+alias p="sudo pacman"
 
 #exports to make defaults
 set -x EDITOR nvim

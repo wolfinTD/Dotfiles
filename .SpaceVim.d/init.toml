@@ -35,6 +35,12 @@ name = 'shell'
 default_position = 'top'
 default_height = 30
 
+name = "lang#c"
+
+name = "lang#java"
+
+name = "lang#python"
+
 [[custom_plugins]]
 name = "dracula/vim"
 merged = 0
