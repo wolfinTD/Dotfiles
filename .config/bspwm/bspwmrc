@@ -17,6 +17,8 @@ bspc config gapless_monocle      true
 #bspc rule -a Kupfer.py focus=on
 #bspc rule -a Screenkey manage=off
 
+bspc rule -a Emacs state=tiled
+
 picom -f &
 ./.config/polybar/launch.sh
 nitrogen --restore &
