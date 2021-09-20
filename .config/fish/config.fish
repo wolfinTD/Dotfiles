@@ -16,6 +16,7 @@ alias gp="git push"
 alias ls="exa"
 alias gw2="./Downloads/GW2/play.sh"
 alias p="sudo pacman"
+alias y="yay"
 
 #exports to make defaults
 set -x EDITOR nvim
