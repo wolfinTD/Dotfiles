@@ -24,7 +24,7 @@ alias doompurge="~/.emacs.d/bin/doom purge"
 alias doombuild="~/.emacs.d/bin/doom build"
 
 #exports to make defaults
-set -x EDITOR nvim
+set -x EDITOR emacs
 set -x TERM alacritty
 set -x TERMINAL alacritty
-set -x VISUAL nvim
+set -x VISUAL emacs
