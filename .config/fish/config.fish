@@ -17,6 +17,10 @@ alias ls="exa"
 alias gw2="./Downloads/GW2/play.sh"
 alias p="sudo pacman"
 alias y="yay"
+alias doomsync="/.emacs.d/bin/doom sync"
+alias doomdoctor="~/.emacs.d/bin/doom doctor"
+alias doomupgrade="~/.emacs.d/bin/doom upgrade"
+alias doompurge="~/.emacs.d/bin/doom purge"
 
 #exports to make defaults
 set -x EDITOR nvim

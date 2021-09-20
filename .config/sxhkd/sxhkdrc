@@ -151,6 +151,3 @@ XF86AudioStop
 #flameshot screenshot binding
 Print
 	flameshot gui
-
-#picom on boot
-picom -f &

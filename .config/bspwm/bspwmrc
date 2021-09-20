@@ -20,5 +20,5 @@ bspc config gapless_monocle      true
 picom -f &
 ./.config/polybar/launch.sh
 nitrogen --restore &
-ckb-next --background
+#ckb-next --background
 pulseeffects --gapplication-service
