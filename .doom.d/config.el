@@ -36,6 +36,8 @@
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type 'relative)
 
+;; removes the prompt that shows up when exitting emacs
+(setq confirm-kill-emacs nil)
 
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;
