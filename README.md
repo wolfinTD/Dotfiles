@@ -1,4 +1,4 @@
-## Eklavya Sood's linux dotfile repository ##
+## Eklavya Sood's dotfile repository ##
 
 
 ![screenshot](https://github.com/eklavyasood/Dotfiles/blob/main/screens/bspwm.png)
