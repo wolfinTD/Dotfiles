@@ -3,7 +3,7 @@
 
 ![screenshot](https://github.com/eklavyasood/Dotfiles/blob/main/screens/bspwm.png)
 
-Projects that I've used for my desktop - 
+Stuff I use in everyday life (and some that I used in the past but not anymore)
 
 - [alacritty](https://github.com/alacritty/alacritty)
 - [awesomewm](https://github.com/awesomeWM/awesome)
