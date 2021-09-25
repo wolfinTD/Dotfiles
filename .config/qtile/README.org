@@ -1,6 +1,8 @@
 #+TITLE: qtile config
 #+PROPERTY:
 
+this is very much a work in progress, will maybe update as I learn more python
+
 * python library imports
 #+begin_src python
 
