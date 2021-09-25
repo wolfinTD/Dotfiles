@@ -4,6 +4,7 @@
 this is very much a work in progress, will maybe update as I learn more python
 
 * python library imports
+importing all the python functions(?) that we'll need in the config
 #+begin_src python
 from typing import list
 
@@ -14,13 +15,14 @@ from libqtile.utils import guess_terminal
 #+end_src
 
 * variable declarations
+declaring variables for common programs that we can call later
 #+begin_src python
 mod = "mod4"
 terminal = "alacritty"
 #+end_src
 
-
 * key bindings
+all bindings for what key does what, pretty important
 #+begin_src python
 keys = [
         #move focus with vim bindings (h  j  k  l)
@@ -53,8 +55,8 @@ keys = [
         ]
 #+end_src
 
-* groups (or workspaces in most tiling WMs)
-
+* * groups (or workspaces in most tiling WMs)
+defining and binding keys related to groups
 #+begin_src python
 groups = [Group(i) for i in "123456789"]
 
