@@ -55,7 +55,7 @@ keys = [
         ]
 #+end_src
 
-* * groups (or workspaces in most tiling WMs)
+** groups (or workspaces in most tiling WMs)
 defining and binding keys related to groups
 #+begin_src python
 groups = [Group(i) for i in "123456789"]
