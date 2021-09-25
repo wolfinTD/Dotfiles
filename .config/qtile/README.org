@@ -1,10 +1,10 @@
 #+TITLE: qtile config
-#+PROPERTY:
+#+PROPERTY: header-args :tangle config.py
 
-this is very much a work in progress, will maybe update as I learn more python
+this is very much a work in progress, will maybe update as I learn more python.
 
 * python library imports
-importing all the python functions(?) that we'll need in the config
+importing all the python libraries(?) that we'll need in the config
 #+begin_src python
 from typing import list
 
@@ -23,6 +23,7 @@ terminal = "alacritty"
 
 * key bindings
 all bindings for what key does what, pretty important
+** basic window management
 #+begin_src python
 keys = [
         #move focus with vim bindings (h  j  k  l)

@@ -1,12 +1,9 @@
-### eklavyasood qtile configuration file ###
-#just learnint, made this from scratch with some internet references, still pretty shit since I don't actually know python yet
 from typing import list
 
 from libqtile import bar, layout, widget
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
-
 
 mod = "mod4"
 terminal = "alacritty"
@@ -40,8 +37,6 @@ keys = [
         Key([mod, "control"], "q", lazy.shutdown(), desc="Kill qtile"),
         Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
         ]
-
-
 
 groups = [Group(i) for i in "123456789"]
 

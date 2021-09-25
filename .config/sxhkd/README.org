@@ -1,3 +1,11 @@
+#+TITLE: sxhkd config
+#+PROPERTY: header-args :tangle sxhkdrc
+#+BABEL: yes :tangle sxhkdrc
+
+config file for sxhkd, the simple X hotkey daemon for use with bspwm
+
+* terminal, run launcher(s)
+#+begin_src sh
 # terminal emulator
 super + Return
 	alacritty
@@ -8,7 +16,10 @@ super + @space
 
 super + d
 	dmenu_run -b
+#+end_src
 
+* bspwm/sxhkd specific
+#+begin_src sh
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
@@ -20,7 +31,10 @@ super + alt + {q,r}
 # close and kill
 super + {_,shift + }w
 	bspc node -{c,k}
+#+end_src
 
+* nodes/monocle
+#+begin_src sh
 # alternate between the tiled and monocle layout
 super + m
 	bspc desktop -l next
@@ -47,7 +61,10 @@ super + {_,shift + }{h,j,k,l}
 
 # focus the node for the given path jump
 super + {p,b,comma,period}
+#+end_src
 
+* window focus
+#+begin_src sh
 # focus the next/previous window in the current desktop
 super + {_,shift + }c
 	bspc node -f {next,prev}.local.!hidden.window
@@ -69,7 +86,10 @@ super + {o,i}
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
+#+end_src
 
+* window preselection
+#+begin_src sh
 # preselect the direction
 super + ctrl + {h,j,k,l}
 	bspc node -p {west,south,north,east}
@@ -85,7 +105,10 @@ super + ctrl + space
 # cancel the preselection for the focused desktop
 super + ctrl + shift + space
 	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
+#+end_src
 
+* window resizing/movement
+#+begin_src sh
 # expand a window by moving one of its side outward
 super + alt + {h,j,k,l}
 	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
@@ -97,7 +120,10 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+#+end_src
 
+* keyboard control bindings
+#+begin_src sh
 #keyboard volume bindings
 XF86AudioRaiseVolume
 	pactl set-sink-volume @DEFAULT_SINK@ +5%;
@@ -121,3 +147,4 @@ XF86AudioStop
 #flameshot screenshot binding
 Print
 	flameshot gui
+#+end_src
