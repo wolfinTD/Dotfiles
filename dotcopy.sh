@@ -15,4 +15,4 @@ cp -r $HOME/.config/rofi $HOME/docs/Dotfiles/.config
 #cp -r $HOME/.SpaceVim.d $HOME/docs/Dotfiles/
 cp -r $HOME/.config/sxhkd $HOME/docs/Dotfiles/.config
 cp -r $HOME/.config/alacritty $HOME/docs/Dotfiles/.config
-#cp -r $HOME/.config/qtile $HOME/docs/Dotfiles/.config
+cp -r $HOME/.config/qtile $HOME/docs/Dotfiles/.config
