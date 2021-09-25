@@ -59,8 +59,8 @@ font-5 = "Font Awesome 5 Brands:10;1"
 
 modules-left = bspwm i3 xwindow
 modules-center = spotify
-modules-right = filesystem pulseaudio memory cpu date powermenu
-
+modules-right = filesystem pulseaudio date powermenu
+# right - memory cup
 #separator = //
 
 tray-position = none 
