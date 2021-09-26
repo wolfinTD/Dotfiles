@@ -1,6 +1,8 @@
 #+TITLE: qtile config
 #+PROPERTY: header-args :tangle config.py
 
+config file for the qtile tiling wm, written in python
+
 * imports
 #+begin_src python
 from typing import List  # noqa: F401
