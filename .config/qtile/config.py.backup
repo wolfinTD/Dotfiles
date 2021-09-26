@@ -1,11 +1,9 @@
-### eklavyasood qtile configuration file ###
-
+from typing import list
 
 from libqtile import bar, layout, widget
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
-
 
 mod = "mod4"
 terminal = "alacritty"
@@ -36,6 +34,88 @@ keys = [
         Key([mod], "Tab", lazy.next_layout(), desc="Toggle between columns and max layouts"),
         Key([mod], "w", lazy.window.kill(), desc="Kill focused window"),
         Key([mod, "control"], "r", lazy.restart(), desc="Restart qtile"),
-        Key([mod, "zontrol"], "q", lazy.shutdown(), desc="Kill qtile"),
+        Key([mod, "control"], "q", lazy.shutdown(), desc="Kill qtile"),
         Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
         ]
+
+groups = [Group(i) for i in "123456789"]
+
+for i in groups:
+    keys.extend([
+
+        #change workspace with mod+[1,2,3,4,5,6,7,8,9]
+        Key([mod], i.name, lazy.group[i.name].toscreen()),
+
+        #move focused window and change focus to workspace with mpd+shift+[1,2,3,4,5,6,7,8,9]
+        Key([mod, "shift"], i.name, lazy.window.togroup(i.name,switch_group=True), desc="Switch to and move focused window to group".format(i.name)),
+        ])
+
+layouts = [
+        layout.Columns(border_focus_stack=['#d75f5f', '#8f3d3d'], border_width=4),
+        layout.Max(),
+        layout.Bsp(),
+        layout.Tile(),
+]
+
+widget_defaults = dict(
+    font='Tamsyn',
+    fontsize=12,
+    padding=3,
+)
+
+extension_defaults = widget_defaults.copy()
+
+screens = [
+    Screen(
+        bottom=bar.Bar(
+            [
+                widget.CurrentLayout(),
+                widget.GroupBox(),
+                widget.Prompt(),
+                widget.WindowName(),
+                widget.Chord(
+                    chords_colors={
+                        'launch': ("#ff0000", "#ffffff"),
+                    },
+                name_transform=lambda name: name.upper(),
+                ),
+                widget.TextBot("big lion", names="default"),
+                widget.Systray(),
+                widget.Clock(format='%d=%m-%y %a %I:%M %p'),
+                widget.QuickExit(),
+                ],
+            24,
+        ),
+    ),
+]
+
+mouse = [
+        Drag([mod], "Button1", lazy.window.set_position_floating(),
+             start=lazy.window.get_position()),
+        Drag([mod], "Button3", lazy.window.set_size_floating(),
+             start=lazy.window.get_size()),
+        Click([mod], "Button2", lazy.windiw.bring_to_front())
+
+]
+
+dgroups_key_binder = None
+dgroups_app_rules = []
+follow_mouse_focus = True
+bring_front_click = False
+Cursor_warp = False
+floating_layout = layout.Floating(float_rules=[
+    *layout.Floating.default_float_rules,
+    Match(wm_class='confirmreset'),
+    Match(wm_class='makebranch'),
+    Match(wm_class='maketag'),
+    Match(wm_class='ssh-askpass'),
+    Match(wm_class='branchdialog'),
+    Match(wm_class='pinentry'),
+])
+auto fullscreen = True
+focus_on_window_activation = "smart"
+reconfigure_screens = True
+
+auto_minimize = True #auto-minimizing windows to be respected or not
+
+wmname = "LG3D"

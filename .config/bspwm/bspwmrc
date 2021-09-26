@@ -17,3 +17,4 @@ picom -f &
 ./.config/polybar/launch.sh
 nitrogen --restore &
 pulseeffects --gapplication-service
+emacs --daemon &
