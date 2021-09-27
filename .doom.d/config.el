@@ -35,10 +35,9 @@
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type 'relative)
-(setq display-line-numbers-type 'absolute)
 ;; removes the prompt that shows up when exitting emacs
 (setq confirm-kill-emacs nil)
-
+(global-display-line-numbers-mode)
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;
 ;; - `load!' for loading external *.el files relative to this one
