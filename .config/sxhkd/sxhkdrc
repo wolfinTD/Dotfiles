@@ -9,6 +9,13 @@ super + Return
 # program launcher
 super + @space
 	  rofi -show-icons -modi drun,run -show drun -theme
+super + d
+	  dmenu_run
+
+
+# rofi power menu
+super + p
+	  rofi -show power-menu -modi power-menu:~/.local/bin/rofi-power-menu
 
 # make sxhkd reload its configuration files:
 super + Escape

@@ -7,7 +7,6 @@ from libqtile.utils import guess_terminal
 
 mod = "mod4"
 terminal = guess_terminal()
-myAltColor = "#e60053"
 
 keys = [
     # Switch between windows
@@ -15,7 +14,7 @@ keys = [
     Key([mod], "l", lazy.layout.right(), desc="Move focus to right"),
     Key([mod], "j", lazy.layout.down(), desc="Move focus down"),
     Key([mod], "k", lazy.layout.up(), desc="Move focus up"),
-    Key([mod], "grave", lazy.layout.next(),
+    Key([mod], "Tab", lazy.layout.next(),
         desc="Move window focus to other window"),
 
     # Move windows between left/right columns or move up/down in current stack.
@@ -48,7 +47,7 @@ keys = [
     Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
 
     # Toggle between different layouts as defined below
-    Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
+    Key([mod], "0", lazy.next_layout(), desc="Toggle between layouts"),
 
     Key([mod], "w", lazy.window.kill(), desc="Kill focused window"),
 
@@ -56,11 +55,19 @@ keys = [
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], "space", lazy.spawn("rofi -show-icons -modi drun,run -show drun -theme"), desc='Run Launcher'),
 
+    Key([], "XF86AudioRaiseVolume", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ +5%")),
+    Key([], "XF86AudioLowerVolume", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ -5%")),
+    Key([], "XF86AudioMute", lazy.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle")),
+
     Key([], "XF86AudioPlay", lazy.spawn("playerctl play-pause")),
     Key([], "XF86AudioNext", lazy.spawn("playerctl next")),
     Key([], "XF86AudioPrev", lazy.spawn("playerctl prev")),
     Key([], "XF86AudioStop", lazy.spawm("playerctl stop")),
-    Key([], "Print", lazy.spawn("flameshot gui"))
+    Key([], "Print", lazy.spawn("flameshot gui")),
+
+    Key([mod], "d", lazy.spawn("dmenu_run -b")),
+
+    Key([mod], "p", lazy.spawn("rofi -show power-menu -modi power-menu:~/.local/bin/rofi-power-menu"))
 ]
 
 groups = [Group(i) for i in "123456789"]
@@ -72,28 +79,13 @@ for i in groups:
             desc="Switch to group {}".format(i.name)),
 
         # mod1 + shift + letter of group = switch to & move focused window to group
-        Key([mod, "shift"], i.name, lazy.window.togroup(i.name, switch_group=True),
-            desc="Switch to & move focused window to group {}".format(i.name)),
+        # Key([mod, "shift"], i.name, lazy.window.togroup(i.name, switch_group=True),
+        #   desc="Switch to & move focused window to group {}".format(i.name)),
         # Or, use below if you prefer not to switch to that group.
         # # mod1 + shift + letter of group = move focused window to group
-        # Key([mod, "shift"], i.name, lazy.window.togroup(i.name),
-        #     desc="move focused window to group {}".format(i.name)),
+        Key([mod, "shift"], i.name, lazy.window.togroup(i.name),
+             desc="move focused window to group {}".format(i.name)),
     ])
-
-layouts = [
-    layout.Columns(border_focus_stack=['#d75f5f', '#8f3d3d'], border_width=2, margin=8),
-    layout.Max(),
-    # layout.Stack(num_stacks=2),
-    # layout.Bsp(),
-    # layout.Matrix(),
-    # layout.MonadTall(),
-    # layout.MonadWide(),
-    # layout.RatioTile(),
-    # layout.Tile(),
-    layout.TreeTab(),
-    # layout.VerticalTile(),
-    # layout.Zoomy(),
-]
 
 widget_defaults = dict(
     font='Tamsyn',
@@ -101,6 +93,30 @@ widget_defaults = dict(
     padding=1,
 )
 extension_defaults = widget_defaults.copy()
+
+# Drag floating layouts.
+mouse = [
+    Drag([mod], "Button1", lazy.window.set_position_floating(),
+         start=lazy.window.get_position()),
+    Drag([mod], "Button3", lazy.window.set_size_floating(),
+         start=lazy.window.get_size()),
+    Click([mod], "Button2", lazy.window.bring_to_front())
+]
+
+layouts = [
+    layout.Columns(border_focus_stack=['#d75f5f', '#8f3d3d'], border_width=2, margin=8),
+    layout.Max(margin=8),
+    # layout.Stack(num_stacks=2),
+    # layout.Bsp(margin=8),
+    # layout.Matrix(),
+    # layout.MonadTall(),
+    # layout.MonadWide(),
+    # layout.RatioTile(),
+    # layout.Tile(),
+    # layout.TreeTab(),
+    # layout.VerticalTile(),
+    # layout.Zoomy(),
+]
 
 screens = [
     Screen(
@@ -117,21 +133,15 @@ screens = [
                     name_transform=lambda name: name.upper(),
                 ),
                 widget.Systray(),
+                widget.CPU(),
+                widget.Memory(),
                 widget.Clock(format='%Y-%m-%d %a %I:%M %p'),
+                widget.PulseVolume(),
                 widget.QuickExit(),
             ],
             24,
         ),
     ),
-]
-
-# Drag floating layouts.
-mouse = [
-    Drag([mod], "Button1", lazy.window.set_position_floating(),
-         start=lazy.window.get_position()),
-    Drag([mod], "Button3", lazy.window.set_size_floating(),
-         start=lazy.window.get_size()),
-    Click([mod], "Button2", lazy.window.bring_to_front())
 ]
 
 import os

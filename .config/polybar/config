@@ -59,13 +59,13 @@ font-5 = "Font Awesome 5 Brands:10;1"
 
 modules-left = bspwm i3 xwindow
 modules-center = spotify
-modules-right = filesystem pulseaudio date powermenu
+modules-right = updates-pacman filesystem pulseaudio date powermenu
 # right - memory cup
 #separator = //
 
-tray-position = none 
-tray-padding = 2
-tray-background = #0063ff
+tray-position = right
+tray-padding = 1
+tray-background = #000063ff
 
 wm-restack = bspwm
 ;wm-restack = i3
@@ -80,6 +80,11 @@ scroll-down = bspwm-deskprev
 
 cursor-click = pointer
 cursor-scroll = pointer
+
+[module/updates-pacman]
+type = custom/script
+exec = $HOME/.config/polybar-scripts/updates-pacman/updates-pacman.sh
+interval = 600
 
 [module/spotify]
 type = custom/script
