@@ -33,7 +33,7 @@ height = 18
 ;offset-y = 1%
 radius = 7.0
 fixed-center = true
-bottom = true
+bottom = false
 
 background = ${colors.background}
 foreground = ${colors.foreground}

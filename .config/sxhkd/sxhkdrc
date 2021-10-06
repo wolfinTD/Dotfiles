@@ -10,7 +10,7 @@ super + Return
 super + @space
 	  rofi -show-icons -modi drun,run -show drun -theme
 super + d
-	  dmenu_run
+	  j4-dmenu-desktop [--dmenu="dmenu_run"] [--term="alacritty"]
 
 
 # rofi power menu
