@@ -8,9 +8,9 @@ super + Return
 
 # program launcher
 super + @space
-	  rofi -show-icons -modi drun,run -show drun -theme
-super + d
 	  j4-dmenu-desktop [--dmenu="dmenu_run"] [--term="alacritty"]
+super + d
+	  dmenu_run
 
 
 # rofi power menu
@@ -90,6 +90,7 @@ super + {o,i}
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
+
 
 #
 # preselect

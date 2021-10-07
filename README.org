@@ -1,0 +1,19 @@
+#+TITLE: wolfintd's Dotfiles git repository
+
+dotfiles I've created out of either sheer luck or butchered other people's dotfiles into working for me, pure garbage
+
+[[https://github.com/wolfintd/Dotfiles/blob/main/screens/bspwm.png][screenshot]]
+
+* projects I use (programs)
+- [[https://github.com/alacritty/alacritty][alacritty]]
+- [[https://github.com/awesomeWM/awesome][awesomewm]]
+- [[https://github.com/baskerville/bspwm][bspwm]]
+- [[https://github.com/hlissner/doom-emacs][doom-emacs]]
+- [[https://github.com/i3/i3][i3wm]]
+- [[https://github.com/fish-shell/fish-shell][fish-shell]]
+- [[https://github.com/kovindgoyal/kitty][kitty]]
+- [[https://github.com/polybar/polybar][polybar]]
+- [[tps://github.com/qtile/qtile][qtile]]
+- [[https://github.com/davatorium/rofi][rofi]]
+- [[https://github.com/SpaceVim/spacevim][spacevim]]
+- [[https://github.com/baskerville/sxhkd][sxhkd]]

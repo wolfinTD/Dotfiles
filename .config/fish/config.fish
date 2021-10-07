@@ -21,7 +21,7 @@ alias doomdoctor="~/.emacs.d/bin/doom doctor"
 alias doomupgrade="~/.emacs.d/bin/doom upgrade"
 alias doompurge="~/.emacs.d/bin/doom purge"
 alias doombuild="~/.emacs.d/bin/doom build"
-alias mnthdd="udiskctl mount -b /dev/sdb"
+alias mnthdd="udisksctl mount -b /dev/sdb"
 alias pdf="devour zathura"
 
 #exports to make defaults
