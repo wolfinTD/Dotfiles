@@ -1,6 +1,6 @@
 #+TITLE: wolfintd's Dotfiles git repository
 
-dotfiles I've created out of either sheer luck or butchered other people's dotfiles into working for me, pure garbage
+dotfiles I've created out of either sheer luck or butchered other people's dotfiles into working for me, pure garbage kek
 
 [[https://github.com/wolfintd/Dotfiles/blob/main/screens/bspwm.png][current desktop]]
 
