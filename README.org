@@ -2,7 +2,7 @@
 
 dotfiles I've created out of either sheer luck or butchered other people's dotfiles into working for me, pure garbage
 
-[[https://github.com/wolfintd/Dotfiles/blob/main/screens/bspwm.png][screenshot]]
+[[https://github.com/wolfintd/Dotfiles/blob/main/screens/bspwm.png][current desktop]]
 
 * projects I use (programs)
 - [[https://github.com/alacritty/alacritty][alacritty]]
