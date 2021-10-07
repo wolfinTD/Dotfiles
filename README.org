@@ -2,6 +2,8 @@
 
 dotfiles I've created out of either sheer luck or butchered other people's dotfiles into working for me, pure garbage kek
 
+also i use emacs org-mode now somehow
+
 [[https://github.com/wolfintd/Dotfiles/blob/main/screens/bspwm.png][current desktop]]
 
 * projects I use (programs)
