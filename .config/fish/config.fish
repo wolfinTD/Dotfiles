@@ -23,6 +23,8 @@ alias doompurge="~/.emacs.d/bin/doom purge"
 alias doombuild="~/.emacs.d/bin/doom build"
 alias mnthdd="udisksctl mount -b /dev/sdb"
 alias pdf="devour zathura"
+alias sxiv="devour sxiv"
+alias mpv="devour mpv"
 
 #exports to make defaults
 set -x EDITOR emacs
