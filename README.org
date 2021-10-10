@@ -4,7 +4,7 @@ dotfiles I've created out of either sheer luck or butchered other people's dotfi
 
 also i use emacs org-mode now somehow
 
-[[https://github.com/wolfintd/Dotfiles/blob/main/screens/bspwm.png][current desktop]]
+[https://github.com/wolfintd/Dotfiles/blob/main/screens/bspwm.png]
 
 * projects I use (programs)
 - [[https://github.com/alacritty/alacritty][alacritty]]
