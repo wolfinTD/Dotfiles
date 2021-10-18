@@ -15,6 +15,9 @@ alias gc="git commit -m"
 alias gp="git push"
 alias ls="exa"
 alias p="sudo pacman"
+alias pu="sudo pacman -Syyu"
+alias pi="sudo pacman -S"
+alias pr="sudo pacman -Rs"
 alias y="yay"
 alias doomsync="~/.emacs.d/bin/doom sync"
 alias doomdoctor="~/.emacs.d/bin/doom doctor"
@@ -25,6 +28,8 @@ alias mnthdd="udisksctl mount -b /dev/sdb"
 alias pdf="devour zathura"
 alias sxiv="devour sxiv"
 alias mpv="devour mpv"
+alias ani="/home/ivan/docs/ani-cli/ani-cli"
+alias pss="pacman -Ss"
 
 #exports to make defaults
 set -x EDITOR emacs
