@@ -15,4 +15,4 @@ cp -r $HOME/.config/rofi $HOME/docs/'Git Repos'/Dotfiles/.config
 #cp -r $HOME/.SpaceVim.d $HOME/docs/'Git Repos'/Dotfiles/
 cp -r $HOME/.config/sxhkd $HOME/docs/'Git Repos'/Dotfiles/.config
 cp -r $HOME/.config/alacritty $HOME/docs/'Git Repos'/Dotfiles/.config
-cp -r $HOME/.config/qtile $HOME/docs/'Git Repos'/Dotfiles/.config
+#cp -r $HOME/.config/qtile $HOME/docs/'Git Repos'/Dotfiles/.config
