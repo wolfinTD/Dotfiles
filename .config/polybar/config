@@ -15,13 +15,14 @@
 ;==========================================================
 
 [colors]
+; current colors are dd0000 for red
 ;background = ${xrdb:color0:#222}
 background = #00252E32
 background-alt = #252C2F
 ;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
 foreground-alt = #ffffff
-primary = #00A5B3 
+primary = #dd0000
 secondary = #e60053
 alert = #bd2c40
 
@@ -92,7 +93,7 @@ interval = 1
 format-prefix = ""
 format = <label>
 exec = python $HOME/docs/spotify-polybar/spotify_status.py 
-format-underline = #00A5B3
+format-underline = #dd0000
 click-left = playerctl --player=spotify play-pause
 click-right = playerctl --player=spotify next
 click-middle = playerctl --player=spotify previous
@@ -123,7 +124,7 @@ interval = 25
 
 mount-0 = /
 
-label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
+label-mounted = %{F#dd0000}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -289,7 +290,7 @@ time-alt = %H:%M:%S
 
 format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #00A5B3
+format-underline = #dd0000
 
 label = %time% %date%
 
@@ -304,13 +305,13 @@ label-muted =  muted
 label-muted-foreground = #666
 
 bar-volume-width = 10
-bar-volume-foreground-0 = #00A5B3
-bar-volume-foreground-1 = #00A5B3
-bar-volume-foreground-2 = #00A5B3
-bar-volume-foreground-3 = #00A5B3
-bar-volume-foreground-4 = #00A5B3
-bar-volume-foreground-5 = #00A5B3
-bar-volume-foreground-6 = #00A5B3
+bar-volume-foreground-0 = #dd0000
+bar-volume-foreground-1 = #dd0000
+bar-volume-foreground-2 = #dd0000
+bar-volume-foreground-3 = #dd0000
+bar-volume-foreground-4 = #dd0000
+bar-volume-foreground-5 = #dd0000
+bar-volume-foreground-6 = #dd0000
 bar-volume-gradient = false
 bar-volume-indicator = |
 bar-volume-indicator-font = 2

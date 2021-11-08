@@ -25,7 +25,12 @@ alias pu="sudo pacman -Syyu"
 alias pi="sudo pacman -S"
 alias pr="sudo pacman -Rs"
 alias pss="pacman -Ss"
+alias pqs="pacman -Qs"
 alias y="yay"
+alias yss="yay -Ss"
+alias yqs="yay -Qs"
+alias yu="yay -Syu"
+alias yr="yay -Rs"
 
 
 # doom emacs
@@ -39,6 +44,7 @@ alias doombuild="~/.emacs.d/bin/doom build"
 # others
 alias mnthdd="udisksctl mount -b /dev/sdb"
 alias ls="exa"
+alias lah="exa -lah"
 
 
 # devour applications

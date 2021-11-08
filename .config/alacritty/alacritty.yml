@@ -738,7 +738,7 @@ font:
 #    background: '#f6f6f6'
 #
 #
-#Color Scheme - kitty
+##Color Scheme - kitty
 colors:
   # Default colors
   primary:
@@ -766,8 +766,8 @@ colors:
     magenta: '#fd28ff'
     cyan:    '#14ffff'
     white:   '#ffffff'
-#
-#
+
+
 #Color Scheme - material
 ## Colors (Material Theme)
 #colors:
