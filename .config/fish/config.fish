@@ -6,8 +6,8 @@ end
 # aliases
 # vim
 alias nv="nvim"
-alias vim="nvim"
-alias vi="nvim"
+#alias vim="nvim"
+#alias vi="nvim"
 
 
 # git
@@ -51,7 +51,7 @@ alias lah="exa -lah"
 alias pdf="devour zathura"
 alias sxiv="devour sxiv"
 alias mpv="devour mpv"
-alias ani="/home/ivan/docs/ani-cli/ani-cli"
+alias ani="/home/ivan/docs/'Git Repos'/ani-cli/ani-cli"
 
 #exports to make defaults
 set -x EDITOR emacs
